@@ -2,14 +2,13 @@ const net = require('net');
 const http = require('http');
 const { Buffer } = require('buffer');
 const { exec, execSync } = require('child_process');     
-                                                      // 填写变量测试正常后，全选代码到 https://obfuscator.io 全局混淆保存部署
-const UUID = process.env.UUID || '606e39fd-2651-4ad5-ae9d-fb2ac1901f88'; // UUID
-const NEZHA_SERVER = process.env.NEZHA_SERVER || '';       // v0哪吒面板域名：例如：nezha.xxx.com
-const NEZHA_PORT = process.env.NEZHA_PORT || '';           // v0的agent端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
-const NEZHA_KEY = process.env.NEZHA_KEY || '';             // v0的agent端口  
-const SUB_PATH = process.env.SUB_PATH || 'sub';            // 节点订阅路径
-const XPATH = process.env.XPATH || UUID.slice(0, 8);       // 节点路径
-const DOMAIN = process.env.DOMAIN || '';   // 必填项，hug分配的域名或workers反代后的域名,例如：xxx.abc-hf.space 
+const UUID = process.env.UUID || '606e39fd-2651-4ad5-ae9d-fb2ac1901f88'; 
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';       
+const NEZHA_PORT = process.env.NEZHA_PORT || '';        
+const NEZHA_KEY = process.env.NEZHA_KEY || '';         
+const SUB_PATH = process.env.SUB_PATH || 'sub';        
+const XPATH = process.env.XPATH || UUID.slice(0, 8);      
+const DOMAIN = process.env.DOMAIN || '';  
 const NAME = process.env.NAME || 'vls';                     
 const PORT = process.env.PORT || 3000;                     
 
