@@ -9,8 +9,8 @@ const NEZHA_PORT = process.env.NEZHA_PORT || '';
 const NEZHA_KEY = process.env.NEZHA_KEY || '';          
 const SUB_PATH = process.env.SUB_PATH || 'sub';         
 const XPATH = process.env.XPATH || UUID.slice(0, 8);       
-const DOMAIN = process.env.DOMAIN || '';   // 
-const NAME = process.env.NAME || 'Hf';                     
+const DOMAIN = process.env.DOMAIN || 'serverless-xhttp-latest-xrt2.onrender.com';  
+const NAME = process.env.NAME || 'render';                     
 const PORT = process.env.PORT || 3000;                     
 
 const SETTINGS = {
